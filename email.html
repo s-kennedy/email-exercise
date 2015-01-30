@@ -48,6 +48,8 @@
 
       </div>
 
+  
+
   <div class="container-fluid">
     
       <div class="row">
@@ -67,7 +69,7 @@
           <div id="sidebar" class="col-md-2">
 
             <div id="compose">
-              <button type="button" class="btn btn-danger">Compose</button>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#compose-email">Compose</button>
             </div>
        
             <div id="labels">
@@ -101,9 +103,9 @@
 
           </div>
 
-        <div id="main" class="col-md-8">
+        <div id="main" class="col-md-10">
 
-          <ul id="emails">
+          <ul id="emails" class="list-unstyled">
             <li data-id="1234">
               <div class="checked" data-checked="false"></div>
               <div class="starred" data-starred="true"></div>
@@ -144,19 +146,26 @@
 
       </div>
 
-    <div id="blank-email">
-      <div id="blank-close"></div>
-      <form id="new_email">
-        <div><label for="blank-to">To</label><input id="blank-to" name="to" type="text" value=""></div>
-        <div><label for="blank-from">From</label><input id="blank-from" name="from" type="text" value=""></div>
-        <div><label for="blank-subject">Subject</label><input id="blank-subject" name="subject" type="text" value=""></div>
-        <div><textarea id="blank-content" name="content" rows="4" cols="50"></textarea></div>
-        <div id="blank-bottom">
-          <div id="send"></div>
-          <div id="trash"></div>
-      </form>
-
+    <div class="modal fade bs-example-modal-lg" id="compose-email" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div id="blank-email">
+            <div id="blank-close"></div>
+            <form id="new_email">
+              <div><input id="blank-to" name="to" type="text" placeholder="To" value=""></div><br>
+              <div><input id="blank-from" name="from" type="text" placeholder="From" value=""></div><br>
+              <div><input id="blank-subject" name="subject" type="text" placeholder="Subject" value=""></div><br>
+              <div><textarea id="blank-content" name="content" rows="4" cols="50"></textarea></div><br>
+              <div id="blank-bottom">
+                <div id="send"><button class="btn btn-danger pull-left" type="button">Send</button></div>
+                <div id="trash"><button class="btn btn-default" type="button">Trash</button></div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
   </div>
 

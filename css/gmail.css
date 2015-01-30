@@ -7,4 +7,37 @@
 	font-size: 20px;
 	color: #DD4B39;
 }
-/*navbar-fixed-top*/
+
+#emails {
+	background-color: #F4F4F4;
+	padding: 10px;
+}
+
+#emails li .from {
+	font-weight: bold;
+	display: inline;
+}
+
+#emails li .subject {
+	display: inline;
+	font-style: italic;
+}
+
+
+#emails li {
+	border-bottom: 1px solid #C1C1C1;
+	padding: 5px;
+}
+
+.modal-content {
+	padding: 20px;
+	width: 100%;
+}
+
+#blank-email input, textarea {
+	padding: 5px;
+}
+
+#blank-bottom button {
+	margin-right: 10px;
+}

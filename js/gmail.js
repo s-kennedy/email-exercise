@@ -34,7 +34,6 @@ $("#emails").delegate("li .subject", "click", fullEmail)
 
 function fullEmail(e) {
 	var emailId = $(this).parent().data("id");
-	var self = this;
 	$.get(SERVER+'/email/'+emailId, function(data) {
 		var emailText = data.email;
 		$("li[data-id='"+emailId+"'] .preview").html(emailText);
@@ -42,6 +41,23 @@ function fullEmail(e) {
 };
 
 
-// 
+// send email
+
+$("#send").bind('click', sendEmail)
+
+function sent() {
+	alert("Message sent!")
+}
+
+function sendEmail(e) {
+	$.ajax({
+	type: "post",
+	url: SERVER+'/email',
+	data: $("#blank-to").val(),
+	success: sent
+});
+	$('#compose-email').modal('hide')
+
+};
 
 })
