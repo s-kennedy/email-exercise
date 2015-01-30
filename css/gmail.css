@@ -1,0 +1,10 @@
+#main-labels li:first-child{
+	font-weight: bold;
+	color: #DD4B39;
+}
+
+#email-label {
+	font-size: 20px;
+	color: #DD4B39;
+}
+/*navbar-fixed-top*/

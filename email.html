@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>MeMail</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/gmail.css">
+  </head>
+  <body>
+
+    <div id="email">
+
+      <div id="header">
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="row">
+              
+              <div class="col-md-2">       
+                <div id="logo">
+                 <a class="navbar-brand navbar" href="#">
+                  <img alt="Brand" src="http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" width=92>
+                </a>
+                </div>
+              </div>
+
+              <div class="col-md-6">                           
+                <div id="search-box">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+                
+                <div id="user-profile">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>+Sharon</li>
+                    <li><img src="https://lh4.googleusercontent.com/-V2McEGZrrAg/VJmNehvhBNI/AAAAAAAAJAk/v3MFzGVBCiI/w185-h40-no/notifications.PNG" alt="user-profile"></li>
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+  <div class="container-fluid">
+    
+      <div class="row">
+        <div class="col-sm-2">
+          <span id="email-label" class="pull-left">Gmail<span class="caret"></span></span>
+        </div>
+        <div class="col-sm-10">
+          <ul id="email-actions" class="list-inline">
+            <li id="select-all"><button class="btn btn-default" type="submit">Select</button></li>
+            <li id="check-emails"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button></li>
+            <li id="more"><button class="btn btn-default" type="submit">More <span class="caret"></span></button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+          <div id="sidebar" class="col-md-2">
+
+            <div id="compose">
+              <button type="button" class="btn btn-danger">Compose</button>
+            </div>
+       
+            <div id="labels">
+
+              <ul id="main-labels" class="list-unstyled">
+                <li>Inbox <span id="number-new-emails"></span></li>
+                <li>Starred</li>
+                <li>Sent mail</li>
+                <li>Drafts</li>
+                <li>Spam</li>
+              </ul>
+
+              <ul id="personal-labels" class="list-unstyled">
+                <li>Friends</li>
+                <li>Professional</li>
+                <li>Events</li>
+                <li>Things</li>
+              </ul>
+
+            </div>
+
+            <div id="chat">
+              <div id="chat-profile"></div>
+              <ul id="recent-conversations">
+                <li>Charly Crews</li>
+                <li>Jack Gallagher</li>
+                <li>Richard Castle</li>
+                <li>Sheldon Cooper</li>
+              </ul>
+            </div>
+
+          </div>
+
+        <div id="main" class="col-md-10">
+
+          <ul id="emails">
+            <li data-id="1234">
+              <div class="checked" data-checked="false"></div>
+              <div class="starred" data-starred="true"></div>
+              <div class="from">Charlie Crews</div>
+              <div class="subject">I'm back</div>
+              <div class="preview">After been 12 years in prison...</div>
+            </li>
+            <li data-id="2345">
+              <div class="checked" data-checked="false"></div>
+              <div class="starred" data-starred="false"></div>
+              <div class="from">Jack Gallagher</div>
+              <div class="subject">The psiquiatric revolution</div>
+              <div class="preview">I want to change the way this hospital...</div>
+            </li>
+            <li data-id="3456">
+              <div class="checked" data-checked="false"></div>
+              <div class="starred" data-starred="true"></div>
+              <div class="from">Richard Castle</div>
+              <div class="subject">Niki Heat</div>
+              <div class="preview">The detective Niki Heat....</div>
+            </li>
+            <li data-id="4567">
+              <div class="checked" data-checked="false"></div>
+              <div class="starred" data-starred="false"></div>
+              <div class="from">Sheldon Cooper</div>
+              <div class="subject">I'm going to win the Noble price</div>
+              <div class="preview">Dear poor minds, probably you...</div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="footer" class="col-md-10 col-md-offset-2">
+          <div id="usage">10GB 70% of 15GB</div>
+          <div id="brand">My Mail Company</div>
+          <div id="terms">Terms & privacy</div>
+          <div id="last-activity">Last account activity: 2 minutes ago</div>
+        </div>
+
+      </div>
+
+    <div id="blank-email">
+      <div id="blank-close"></div>
+      <form id="new_email">
+        <div><label for="blank-to">To</label><input id="blank-to" name="to" type="text" value=""></div>
+        <div><label for="blank-from">From</label><input id="blank-from" name="from" type="text" value=""></div>
+        <div><label for="blank-subject">Subject</label><input id="blank-subject" name="subject" type="text" value=""></div>
+        <div><textarea id="blank-content" name="content" rows="4" cols="50"></textarea></div>
+        <div id="blank-bottom">
+          <div id="send"></div>
+          <div id="trash"></div>
+      </form>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/gmail.js"></script>
+  <script>
+  </script>
+</body>
+</html>
