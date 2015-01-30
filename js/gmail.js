@@ -42,8 +42,6 @@ $(document).ready(function () {
 			$("li[data-id='"+emailId+"'] .preview").html(emailText);
 		});
 			$(self).children(".preview").click(function() {
-				// e.stopPropagation();
-				// console.log($(self).children(".preview"));
 				$(self).children(".preview").text("test");
 				return false;
 			});

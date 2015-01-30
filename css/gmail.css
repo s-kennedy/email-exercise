@@ -1,3 +1,40 @@
+#search-box {
+	margin: 15px 10px 0 0;
+}
+
+#header li {
+	display: inline;
+	padding: 15px 10px 0 0 ;
+}
+
+#user-profile li:first-child:hover {
+	text-decoration: underline;
+}
+
+#user-profile li:first-child {
+	padding-top: 25px;
+}
+
+#user-profile img {
+	padding-right: 15px
+}
+
+#header img {
+	padding-left: 20px;
+}
+
+#sidebar {
+	padding-left: 25px;
+}
+
+#email-label {
+	padding-left: 20px;
+}
+
+#compose {
+	padding-bottom: 20px;
+}
+
 #main-labels li:first-child{
 	font-weight: bold;
 	color: #DD4B39;
@@ -40,4 +77,20 @@
 
 #blank-bottom button {
 	margin-right: 10px;
+}
+
+#footer {
+	font-size: 9px;
+}
+
+#usage {
+	text-align: left;
+}
+
+#brand, #terms {
+	text-align: center;
+}
+
+#last-activity {
+	text-align: right;
 }
