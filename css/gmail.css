@@ -94,3 +94,7 @@
 #last-activity {
 	text-align: right;
 }
+
+.starred {
+	display: inline;
+}
